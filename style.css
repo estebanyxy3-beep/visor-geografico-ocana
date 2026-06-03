@@ -1,65 +1,60 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 #map {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    background: #003f7f;
-    color: white;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: #003f7f;
+  color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .sidebar {
-    position: absolute;
-    top: 90px;
-    left: 15px;
-    width: 280px;
-    background: white;
-    z-index: 1000;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.leyenda-item {
-    margin-bottom: 10px;
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  width: 285px;
+  background: white;
+  z-index: 1000;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .color {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin-right: 8px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 5px 8px 5px 0;
+  border: 1px solid #777;
 }
 
-.bicdep {
-    background: #7cc800;
-}
+.bicdep { background: #7cc800; }
+.bicmun { background: #b5e61d; }
+.bicnal { background: #fff200; }
+.tipologica { background: #ff9900; }
+.arquitectonico { background: #ff6600; }
+.sinvalor { background: #d9d2e9; }
 
-.bicmun {
-    background: #ffd24d;
-}
-
-.arquitectonico {
-    background: #ff7f27;
-}
-
-.sinvalor {
-    background: #d9d2e9;
+.label-mapa {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-weight: bold;
+  color: black;
 }
