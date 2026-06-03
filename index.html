@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
@@ -7,71 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visor Geográfico de Ocaña</title>
 
-```
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-
-<link rel="stylesheet" href="style.css">
-```
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-```
-<div class="header">
-    <h1>📍 Visor Geográfico de Ocaña</h1>
-</div>
-
-<div class="sidebar">
-
-    <h2>Capas</h2>
-
-    <label>
-        <input type="checkbox" id="chkTratamientos" checked>
-        Tratamientos patrimoniales
-    </label>
-
-    <br><br>
-
-    <label>
-        <input type="checkbox" id="chkTextos" checked>
-        Textos / Annotation
-    </label>
-
-    <hr>
-
-    <h3>Información</h3>
-
-    <p>
-        Visor geográfico patrimonial del municipio de Ocaña.
-    </p>
-
-    <h3>Leyenda</h3>
-
-    <div class="leyenda-item">
-        <span class="color bicdep"></span> BIC DEP
+    <div class="header">
+        <h1>📍 Visor Geográfico de Ocaña</h1>
     </div>
 
-    <div class="leyenda-item">
-        <span class="color bicmun"></span> BIC MUN / BIC NAL
+    <div class="sidebar">
+
+        <h2>Capas</h2>
+
+        <label>
+            <input type="checkbox" checked>
+            Tratamientos patrimoniales
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="checkbox" checked>
+            Textos / Annotation
+        </label>
+
+        <hr>
+
+        <h3>Información</h3>
+
+        <p>
+            Visor geográfico patrimonial del municipio de Ocaña.
+        </p>
+
+        <h3>Leyenda</h3>
+
+        <div class="leyenda-item">
+            <span class="color bicdep"></span> BIC DEP
+        </div>
+
+        <div class="leyenda-item">
+            <span class="color bicmun"></span> BIC MUN / BIC NAL
+        </div>
+
+        <div class="leyenda-item">
+            <span class="color arquitectonico"></span> Valor arquitectónico
+        </div>
+
+        <div class="leyenda-item">
+            <span class="color sinvalor"></span> Predios sin valor
+        </div>
+
     </div>
 
-    <div class="leyenda-item">
-        <span class="color arquitectonico"></span> Valor arquitectónico
-    </div>
+    <div id="map"></div>
 
-    <div class="leyenda-item">
-        <span class="color sinvalor"></span> Predios sin valor
-    </div>
-
-</div>
-
-<div id="map"></div>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-<script src="main.js"></script>
-```
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
